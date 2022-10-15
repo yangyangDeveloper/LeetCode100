@@ -34,6 +34,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         test13()
+        
+        var dic = [String: Int]()
+        dic["2"] = 2
+        dic["3"] = 3
+        print(dic)
+        dic.removeValue(forKey: "2")
+        print(dic)
+        print(dic.count)
     }
    
     func test13() {
